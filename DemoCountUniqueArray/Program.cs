@@ -10,9 +10,9 @@ namespace DemoCountUniqueArray
 
             for (int i = 0; i < arr.Length; i++)
             {
-                for (int j = i + 1; i < arr.Length; j++)
+                for (int j = i + 1; i < arr.Length-1; j++)
                 {
-                    if (arr[i] == arr[j])
+                    if (i  !=j  )
                     {
                         Console.WriteLine("Duplicated  Arrays are " + arr[j]);
                         break;
