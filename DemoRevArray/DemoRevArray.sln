@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoRevArray", "DemoRevArray.csproj", "{2D76BB71-7C94-4F82-9C1C-34B206845A86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D76BB71-7C94-4F82-9C1C-34B206845A86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D76BB71-7C94-4F82-9C1C-34B206845A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D76BB71-7C94-4F82-9C1C-34B206845A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D76BB71-7C94-4F82-9C1C-34B206845A86}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CBB30CF-84FB-4A6C-8857-B7259D40BF13}
+	EndGlobalSection
+EndGlobal
