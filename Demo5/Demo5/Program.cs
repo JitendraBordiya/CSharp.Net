@@ -6,6 +6,7 @@ namespace Demo5
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome To The Color Game");
             Console.WriteLine("Play With Color Activity");
             Console.WriteLine();
             String c1, c2;
