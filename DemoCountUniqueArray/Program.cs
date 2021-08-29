@@ -6,22 +6,41 @@ namespace DemoCountUniqueArray
     {
         public void Count(int[] arr)
         {
-            int temp =0;
-
-            for (int i = 0; i < arr.Length; i++)
-            {
-                for (int j = i + 1; i < arr.Length-1; j++)
+            int temp = 0;
+            int unique = 0;
+            
+           
+            bool[] visited =new bool[arr.Length] ;
+            Console.WriteLine("UniqueElement"+"\t"+"unique");
+            for (int i = 0; i < arr.Length;i++)
+           {
+                 temp = 1;
+                if (visited[i] == true)
                 {
-                    if (i  !=j  )
-                    {
-                        Console.WriteLine("Duplicated  Arrays are " + arr[j]);
-                        break;
-                       
-                    }
-
+                    continue;
                 }
+                for (int j =i+1; j < arr.Length; j++)
+                {
+                   
+                    if (arr[i] == arr[j])
+                    {
+                        visited[j] = true;
+                       
+                        temp++;
+                     }
+
+                     }
+                
+
+                if (temp == 1)
+                {
+                    unique++;
+                    
+                }
+                Console.WriteLine(arr[i] + "     \t    " + temp);
             }
-            Console.WriteLine("The Total Number of Unique Value is Array is " + temp);
+           Console.WriteLine("\n Total number of unique elements found in array:"+unique);
+
         }
 
     }
@@ -30,7 +49,14 @@ namespace DemoCountUniqueArray
         static void Main(string[] args)
         {
             UniqueCount r1 = new UniqueCount();
-            int[] arr = new int[]{10, 20, 30, 40, 50, 20, 10, 50, 20, 10};
+            Console.Write("Enter The Size of Array : ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] arr = new int[n];
+            Console.WriteLine("Enter Elements in Array");
+            for(int i = 0; i<n; i++)
+            {
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
             r1.Count(arr);
         }
     }
