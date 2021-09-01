@@ -33,10 +33,13 @@ namespace DotNet
             }
             Console.WriteLine();
             }
+
+            //Passing Value
             int n1, n2;
             n1 = n2 = 24;
             Console.WriteLine("The Value of First Variable is {0}", n1);
             Console.WriteLine("The Value of First Variable is "+ n2);
+            //Bool Operator
             int x = 10;
             bool result = (!(x == 10));
             Console.WriteLine("The Condition is " + result);
