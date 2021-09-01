@@ -7,13 +7,12 @@ namespace WordPuzzleGame
 
        
         String input="";
+        
+       
         int Score = 0;
-        string[] Words = new string[] { 
-                                           "TAE","TEA","EMS","ERA","TAR" , "TAM", "ATE"  ,"EAT","ARE",
-                                         "EAR","ARM","ART", "TAS", "ERS","ARS","MAR","RET","RAM",
-                                          "RES","REM", "MAS","MAT", "MET","RAT","RAS","SAE","SAT",
-                                           "SET","SER","ETA","TER", "AMT",  "EMA","SEA","MAE"
-                                               };
+        string[] Words = new string[] { "TAE","TEA","EMS","ERA","TAR" , "TAM", "ATE"  ,"EAT","ARE", "EAR","ARM","ART", "TAS", "ERS","ARS","MAR","RET","RAM",
+            "RES","REM", "MAS","MAT", "MET","RAT","RAS","SAE","SAT", "SET","SER","ETA","TER", "AMT",  "EMA","SEA","MAE"
+           };
 
         public static void Ruth(int n)
         {
@@ -57,53 +56,41 @@ namespace WordPuzzleGame
                 }
             }
         }
-
-
+        
+          
         public void play()
         {
             Console.WriteLine("\t");
             Console.BackgroundColor = ConsoleColor.Yellow;
             Console.ForegroundColor = ConsoleColor.Black;
-          
-
-            Console.WriteLine("Enter The Combination Of Three Words Using MASTER :");
+            
+           Console.WriteLine("Enter The Combination Of Three Words Using MASTER :");
             Console.Write("ENTER THE WORDS :");
             input = Console.ReadLine();
 
-          
-                Console.WriteLine();
-                int pos = Array.IndexOf(Words, input);
-            string ans = Console.ReadLine();
-                    
-                if (pos > -1)
-                {
-                do
-                {
-                    
-                        Console.WriteLine("Whoo ! You Guess Right");
-                        Score++;
-                       Console.WriteLine("Do You Wish To Exit");
-                     
-                      }
-                while (ans!="Quit");
-
-                }
-                else
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Your SCORE." + Score + " Try again!");
-                     Console.WriteLine("Press enter to continue...");
-                    Console.ForegroundColor = ConsoleColor.White;
-                    Console.ReadLine();
-                    play();
-                }
-           
-               
-
             
-
+           
+            
+            Console.WriteLine();
+            int pos = Array.IndexOf(Words, input);
+            if ( pos>-1 )
+            {
+               
+                Console.WriteLine("Whoo ! You Guess Right");
+                Score++;
+                play();
+                
             }
-        
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Your SCORE."+Score+" Try again!");
+                Console.WriteLine("Press enter to continue...");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.ReadLine();
+                play();
+               }
+        }
     }
     class Program
     {
