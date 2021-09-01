@@ -6,7 +6,7 @@ namespace Demo2
     {
         static void Main(string[] args)
         {
-            //Arithmetic 
+            //Arithmetic  Operations
             int a = 22;
             int b = 33;
             int d = 33;
