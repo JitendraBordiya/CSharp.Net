@@ -6,7 +6,7 @@ namespace DotNet
     {
       static void Main(String[] args)
         {
-           //fibonacci Series
+           //fibonacci Seriez
             int num1 = 0;
             int num2 = 1;
             int n;
