@@ -5,6 +5,7 @@ namespace Appraisal
 {
     public class Apraisal
     {
+        //Class Library
         public string cons;
         static SqlConnection con;
         static SqlCommand cmd;
